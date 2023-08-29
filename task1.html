@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task-1</title>
+</head>
+<body>
+<table border="1px">
+	<tr>
+		<th>course name</th>
+		<th>course number</th>
+		<th>course fees</th>
+		<th>place</th>
+	</tr>
+    <tr>
+    	<tbody id="tbodyid"></tbody>
+    </tr>
+</table>
+	<script type="text/javascript">
+		let courses=[{
+			name:'html',
+			number:'23423',
+			fees:'235',
+			place:'dwp',
+		},
+		{
+			name:'css',
+			number:'65687',
+			fees:'567',
+			place:'dwp',
+		},
+		{
+			name:'javascript',
+			number:'67845',
+			fees:'7656',
+			place:'dwp',
+		}]
+		for (i=0;i<courses.length ;i++)
+		{
+			let tr=document.createElement('tr');
+			let td1=document.createElement('td');
+			let td2=document.createElement('td');
+			let td3=document.createElement('td');
+			let td4=document.createElement('td');
+			td1.innerText=courses[i].name
+			td2.innerText=courses[i].number
+			td3.innerText=courses[i].fees
+			td4.innerText=courses[i].place
+			tr.append(td1);
+			tr.append(td2);
+		    tr.append(td3);
+		    tr.append(td4);
+		    document.getElementById('tbodyid').append(tr);
+		}
+//		console.log(course) 
+	</script> 
+</table>
+</body>
+</html>

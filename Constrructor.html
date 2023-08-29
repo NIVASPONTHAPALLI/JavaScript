@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Constructor</title>
+</head>
+<body>
+	<h2>	Construtor</h2>
+<script type="text/javascript">
+	class student{
+		constructor(rno,fname,lname,clg){
+			this.rolln=rno
+			this.firstname=fname
+			this.lastname=lname
+			this.college=clg
+		}
+	}
+	let obj=new student(1234,'Nivas','ponthapalli','ACET')
+	let obj2=new student(4321,'Neelu','ponthapalli','ACET')
+	document.write(obj.rolln,obj.firstname,obj.lastname,obj.college)
+	console.log(obj.rolln,obj.firstname,obj.lastname,obj.college)
+	console.log(obj2.rolln,obj2.firstname,obj2.lastname,obj2.college)
+	document.write("<br>")
+
+	class car{
+		constructor(name,model,cost,color){
+			this.carname=name
+			this.carmodel=model
+			this.carcost=cost
+			this.carcolor=color
+			this.getconclusion=function(){
+				return this.carname+" "+this.carcost
+			}
+		}
+	}
+	let mark=new car('BMW','version2.0',1000000,'Blue')
+	console.log(mark.carname,mark.carmodel,mark.carcost,mark.carcolor)
+	document.write(mark.getconclusion())
+</script>
+</body>
+</html>

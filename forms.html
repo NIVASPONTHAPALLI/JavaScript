@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+</head>
+<body>
+<label>Enter Name</label>
+<input type="text" name="" onkeyup="sample(this.value)" onkeydown="keydown()" id="ids"><br>
+<span id="out" style="color: red;"></span><br>
+<p>My name is: <span id="demo"></span></p><br>
+<input type="text" onkeyup="new1(this.value)" id="is1"><br>
+<span id="out1" style="color: red;"></span><br>
+<script type="text/javascript">
+	function sample(str){
+		var x=document.getElementById('ids').value;
+		document.getElementById('demo').innerHTML=x;
+		if(str==''){
+			document.getElementById('out').innerText='please enter the name';
+			let p=document.getElementById('ids');
+			p.style.color='red';
+			p.style.border='5px solid red';
+		}
+	}
+	function keydown(){
+		var x=document.getElementById('ids').style.color='blue'
+		x.style.backgroundcolor="yellow";
+	}
+	function new1(val){
+		if(val.length<3){
+			document.getElementById('out1').innerText='please enter the name';
+		}
+		else{
+			document.getElementById('out1').textcontent="";
+			document.getElementById('is1').style.border="";
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Images</title>
+	<style type="text/css">
+		
+	</style>
+<!--</head>
+<body>
+<center>
+	<div style="height:280px; width:370px;" onmouseover="indiv('cake.jpg')" id="inout"><img src="cake.jpg"></div> 
+	<div style="height: 300px;width: 420px;float:center;" onmouseover="indiv('1.jpg')" id="indi"><img src="1.jpg">
+	<div style="height: 200px;width: 320px;float:center;" id="inout" ><img src="2.jpg"></div></div>
+	
+	</center>
+<script type="text/javascript">
+	function indiv(){
+		document.getElementById('inout')
+	}
+</script>
+</body>-->
+<body>
+<center>
+<h1>Happy Birthday</h1>
+<img src="1.jpg" onmouseover="nav()" onmouseout="nav1()" id="output">
+<script type="text/javascript">
+	function nav1(){
+		document.getElementById("output").src='1.jpg'
+		
+	}
+	function nav(){
+		document.getElementById("output").src='2.jpg'
+		
+	}
+</script>
+</center>
+</body>
+</html> 
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>image</title>
+	<style type="text/css">
+		img{
+			position: relative;
+			height: 280px;
+			width: 370px;
+		}
+	</style>
+</head>
+<body>
+<center><div onmouseover="indiv('cake.jpg')"><img src="cake.jpg" name="slide"></div></center>
+<script type="text/javascript">
+	var image=[]
+	image[0]='cakecut.jpg'
+	function indiv(val){
+		document.slide.src=images[0];
+	}
+</script>
+</body>
+</html>-->

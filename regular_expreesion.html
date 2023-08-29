@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Regular Expressions</title>
+</head>
+<body>
+<h2>Regular Expressions</h2>
+<script type="text/javascript">
+	let str='NSSN';
+	let re=/batch/i;
+	let output=re.test("fullstack BATCH");
+	if (output==true){
+//			console.log("valid")
+	}else{
+//		console.log("Not a valid")
+	}
+//	console.log(output);
+
+	re2=/^b/;
+	out=re2.test("batch");//true
+	out=re2.test("tbatch");//false
+//	console.log(out)
+	re=/batch/g;
+	res=re.exec("full stack course batch");
+//	console.log(res)
+//	console.log(res.index)
+	res=re.exec("full stack course batch");
+//	console.log(res.index)
+
+	//Number
+	pn=/^[0-9]{10}/   //vlaid upto 10 numbers but exceeded the rnge
+	pn=/^[0-9]{10}$/  //valid upto 10 numbers not exceeded range by $
+	pn=/^[9][0-9]{10}$/  //valid upto 9 numbers
+	out=pn.test("9876543210")
+	console.log(out)
+</script>
+</body>
+</html>

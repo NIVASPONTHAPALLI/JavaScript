@@ -1,0 +1,103 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arrays</title>
+</head>
+<body>
+<h2>Array Methods</h2>
+<p>This method crestes new array and return it after iteration eill completed.</p>
+<table id="table_id" border="1" cellspacing="0">
+</table>
+<script type="text/javascript">
+//	let trainess=['NIvas','veera','Ganesh'];
+//	let arr1=trainess.map(function(ele,index,old_arr){
+//		return "Deat "+ele;
+//	})
+	let tra1=[
+	{
+		name:'Rana',
+		rollno:'1234',
+	},
+	{
+		 name:'sankar',
+		 rollno:'405',
+	}]
+	let tr=' '
+	tra1.map(function(each_trainee,i,arr){
+		tr+="<tr><td>"+(i+1)+"</td></tr>"+each_trainee.name+"</td><td>"+each_trainee.rollno+"</td><tr>";
+	});
+	document.getElementById('table_id').innetHTML=tr
+</script>
+</body>
+</html> -->
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array_methods|map()</title>
+</head>
+<body>
+	<p>This methos creates new array and returns it after iteration will completed</p>
+<script type="text/javascript">
+	let names=['ganesh','nivas','veera','srinu']
+	let arr1=names.map(function(element,index,arr){
+		return "Hello"+element
+	})
+	//or 
+	//let arr2 = names.map(fun_name)
+	//function fun_name(ele,ind,arr_){
+	//	return "hai"+ele
+	//}
+</script>
+<table id="table_id" border="1" cellspacing="0">
+</table>
+<script type="text/javascript">
+	let trinee=[{
+		name:'ganesh',
+		roll_no:'45',
+	},
+	{
+		name:'nivas',
+		roll_no:'123'
+	}]
+		let tr =' ';
+		trinee.map(function(ele,index,arr){
+			tr+="<tr><td>"+(index+1)+"</td><td>"+ele.name+"</td><td>"+ele.roll_no+"</td></tr>";
+		})
+		document.getElementById("table_id").innerHTML=tr
+</script>
+
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array_methods|map()</title>
+</head>
+<body>
+	<p>This methos creates new array and returns it after iteration will completed</p>
+<div id="table_id" style="width:150px; height:75px; background-color: pink;"></div>
+<script type="text/javascript">
+	let trinee=[{
+		name:'ganesh',
+		roll_no:'45',
+	},
+	{
+		name:'nivas',
+		roll_no:'123'
+	}]
+	document.getElementById('table_id').innearHMTL=trinee.map(fun);
+	function fun(it){
+		return[it.name,it.rollno]
+	}
+</script>
+
+</body>
+</html>

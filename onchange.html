@@ -1,0 +1,59 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ON change</title>
+</head>
+<body>
+<center><select style="height:30px;width:300px;" onchange="sample(this.value)">
+	<option>--Select College ---</option>
+	<option value="">AEC</option>
+	<option value="ACET">ACET</option>
+	<option value="ACOE">ACOE</option>
+</select>
+<p id="so"></p>
+</center>
+<script type="text/javascript">
+	function sample(name){
+		document.getElementById('so').innerText=name;
+	}
+</script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><center><h1>College Form</h1>
+    <h3>Enter Your Details</h3>
+    <form id="fom" onsubmit="return validateForm()">
+        First Name : <input type="text" name="fname" id="fname_id"><br><br>
+        Last Name : <input type="text" name="lname" id="lname_id"><br><br>
+        Date of birth : <input type="date"><br><br>
+        Select College : <select name="college" id="clg_id">
+            <option value="">---Select College---</option><br><br>
+            <option value="AEC">Aditya Engineering College</option><br><br>
+            <option value="ACET">Aditya College of Engineering and Technology</option>
+            <option value="ACOE">Aditya College of Engineering</option>
+        </select><br><br>
+        Select District : <select name="college" id="clg_id">
+            <option value="">---Select district---</option>
+            <option value="EAST_GODAVARI">East Godavari</option>
+            <option value="WEST_GODAVARI">West Godavari</option>
+        </select><br><br>
+        Gender : Male<input type="radio" name="gender">
+        Female<input type="radio" name="gender"><br>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form></center>
+    <script>
+        function sample(){
+            document.getElementById('fom').submit()
+        }
+    </script>
+</body>
+</html>

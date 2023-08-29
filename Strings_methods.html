@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>String methods</title>
+</head>
+<body>
+<script type="text/javascript">
+	let str='Nivas Ponthapalli';
+	document.write(typeof(str));
+	document.write("<br>")
+	document.write(str);
+    document.write("<br>")
+	let stri=new String('<b>Nivas Ponthapalli</b>');
+	document.write(typeof(stri));
+	document.write("<br>")
+	document.write(stri)
+	document.write("<br>")
+
+</script>
+</body>
+<body>
+	<table border="2px">
+		<tr>
+			<td>D</td>
+			<td>r</td>
+			<td>i</td>
+			<td>v</td>
+			<td>e</td>
+			<td>&nbsp;</td>
+			<td>R</td>
+			<td>e</td>
+			<td>a</td>
+			<td>d</td>
+			<td>y</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+	
+		</tr>
+		<tr>
+			<td>-10</td>
+			<td>9</td>
+			<td>-8</td>
+			<td>-7</td>
+			<td>-6</td>
+			<td>-5</td>
+			<td>-4</td>
+			<td>-3</td>
+			<td>-2</td>
+			<td>-1</td>
+			<td>0</td>
+	
+		</tr>
+	</table>
+<script>
+	let l='Drive Ready'
+	function ss(str_name){
+		document.write(str_name+"<br>")
+	}
+	ss("Original String="+l)
+	ss("string length="+l.length)
+	ss("String length="+l[3])
+
+	//charAt method
+	ss("char At method="+l.charAt(7))
+
+	//indexOut of method
+    ss("Index of="+l.indexOf('r'))
+    ss("Last index of="+l.lastIndexOf('d'))
+
+    //trim() method
+    let str1=' Sankar'
+    ss("Trim method="+str1.trim())
+
+    //Lower case
+    let str2='WELCOME TO MY WORLD'
+    ss("Lower Case = "+str2.toLowerCase())
+
+    //Upper case
+    ss("Upper Case = "+str2.toUpperCase()) 
+
+    let str7='Neela '
+    let str4='sai ';
+    let str6='nivas ';
+    let str5='sankar '
+    ss("concate string = "+str7.concat(str4,str5,str6))
+
+    //includes()=>returns boolean values
+    let str8='fsd drive ready batch';
+    ss("Includes method = "+str8.includes('batch'))//true
+    ss("Includes method = "+str8.includes('nivas'))//false
+
+    //converting string into an array = >split()
+    let str9='Sai&Nivas Sankar'
+    ss("Split method = "+str9.split("")) 
+    console.log(str9.split("&")) //String divides by based on deliminator "&"
+    console.log(str9.split(" ")) //String divides by based on deliminator " "
+
+    //startswith
+    let str10='Dell Windows'
+    ss("Starts With = "+str10.startsWith('D'))//true
+    ss("Starts With = "+str10.startsWith('h'))//
+
+    //EndsWith
+    ss("Ends With = "+str10.endsWith('s'))//true
+    ss("Ends With = "+str10.endsWith('H'))//false
+
+    //slice method
+    //stringname.slice('startpos,endpos-1')
+    ss("slice method = "+str10.slice(0,7-1))
+    ss("slice method = "+str10.slice(-6,-1))
+
+    //substring method
+    //it allows only postive indedexes
+     ss("substring method = "+str10.substring(7,3))//7,4=4,7
+     ss("substring method = "+str10.substring(-1)) //complete string will come
+
+     //substr method = substr(strpos,length of the characters from 1st arg positon)
+     ss("Substr method = "+str10.substr(1,4))
+     ss("Substr method = "+str10.substr(0,7))
+</script>
+</body>
+</html>
+

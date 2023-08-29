@@ -1,0 +1,152 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Images Sliding</title>
+	<style type="text/css">
+		#div1{
+			margin-left: 20px;
+		}
+		#div2{
+			margin-left: 20px;
+			margin-top: 200px;
+		}
+		#div3{
+			margin-left: 20px;
+		}
+		#img1{
+			cursor: pointer;
+			height: 170px;
+			width: 300px;
+		}
+		.div11{
+			margin-top: 20px;
+		}
+		#div12{
+			margin-top: 20px;
+		}
+		#previousround{
+			font-size: 40px;
+		}
+		.nextround{
+			font-size: 40px;
+		}
+	</style>
+</head>
+<body>
+<center>
+	<div style="height:600px;width: 1100px; border:1px">
+
+		<div style="height:600px;width: 450px; border: 1px solid black;  float: left;" id="div1" >
+			<div style="height:170px;width: 300px; border: 1px solid black;" class="div11" onclick="myfun('soilder.jpg')" onclick="myfun1('soilder.jpg')"><img src="soilder.jpg" id="img1"></div>
+			<div style="height:170px;width: 300px; border: 1px solid black;" class="div11" onclick="myfun('soilder2.jpg')"><img src="soilder2.jpg" id="img1"></div>
+			<div style="height:170px;width: 300px; border: 1px solid black;" class="div11" onclick="myfun('soilder3.jpg')"><img src="soilder3.jpg" id="img1"></div>
+		</div>
+
+		<div style="height:110px;width: 60px; border: 1px solid black;float: left;" id="div2">
+			<a href="#" id="previousround" onclick="myclick()">&#8249;</a><br>
+            <a href="#" class="nextround">&#8250;</a>
+		</div>
+
+		<div style="height:600px;width: 450px; border: 1px solid black; float: left;" id="div3" >
+			<div style="height:170px;width: 300px; border: 1px solid black;" class="div11"><img src="cine1.jpg" id="img1" onclick="myfun(this)"></div>
+			<div style="height:170px;width: 300px; border: 1px solid black;" class="div11"><img src="cine2.jpg" id="img1" onclick="myfun(this)"></div>
+			<div style="height:170px;width: 300px; border: 1px solid black;" id="div12" onclick="myfunout()"></div>
+		</div>
+	</div>
+</center>
+<script type="text/javascript">
+	function myfun1(imgs){
+    	document.getElementsByClassName('div11').img=""
+    }
+	function myfun(imgs) {
+		document.getElementById('div12').innerHTML="<img src='"+imgs+"'style='height:170px;width:300px;'/>";
+		document.getElementById('div11').innerHTML="";
+
+    }
+</script>
+</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>msdfklbn</title>
+	<style type="text/css">
+		.container {
+  display: flex;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img{
+	height: 100px;
+	width: 100px;
+}
+
+</style>
+
+
+</head>
+<body>
+	
+<div class="container">
+	
+	<div style="width:250px;height:350px; ">
+		<div style="width: 100px;height: 350px;float: left;">
+  <div class="box" style="width: 100px;height: 100px">
+    <img src="soilder.jpg" alt="Image 1">
+  </div>
+ 
+  <div class="box" style="width: 100px;height: 100px">
+    
+  </div>
+  <div class="box" style="width: 100px;height: 100px">
+    <img src="soilder2.jpg" alt="Image 3">
+  </div>
+</div>
+<div style="width: 100px;height: 350px;float: right;">
+  <div class="box" style="width: 100px;height: 100px">
+    <img src="soilder3.jpg" alt="Image 3">
+  </div>
+  <div class="box" style="width: 100px;height: 100px">
+    <img src="cine1.jpg" alt="Image 3">
+  </div>
+   <div class="box" style="width: 100px;height: 100px">
+    <img src="cine2.jpg" alt="Image 3">
+</div>
+  </div>
+</div>
+</center>
+
+</div>
+
+
+<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', () => {
+  const boxes = document.querySelectorAll('.box');
+  let emptyBoxIndex = 1;
+
+  boxes.forEach((box, index) => {
+    box.addEventListener('click', () => {
+      if (index !== emptyBoxIndex) {
+        boxes[emptyBoxIndex].innerHTML = box.innerHTML;
+        box.innerHTML = '';
+        emptyBoxIndex = index;
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>

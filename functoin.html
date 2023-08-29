@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Functions</title>
+</head>
+<body>
+	<h2>Functions</h2>
+	<script type="text/javascript">
+//		function test(){
+//			document.write("test");
+//		}
+//		test()
+		function getname(rrr){
+			document.write(rrr)
+		}
+//		getname('nivas')
+//		var id=prompt('Scan your id');
+		function getrollno(rollno){
+			document.write(rollno);
+		}
+//		getrollno(id)
+		function new1(num1,num2){
+			document.write(num1+num2)
+			console.log(num2-num1)
+		}
+//		new1(39,329)
+		function cube(n){
+			//document.write(n**3)
+			return (n**3)
+		}
+//		document.write(cube(10))
+	//anomymous function is a function having with out having function name
+		var output=function(num){
+			return (num**3)
+		}
+//		document.write(output(10))
+	//Arrow functions by using  two arguments
+		mul=(num1,num2)=>{
+			document.write(num1*num2);
+		}
+		mul(3,3)
+	//Arrow functions using one argument
+		getid=rollno=>{
+			document.write(rollno);
+		}
+		getid(5)
+		getid1=_=>{ 
+// 			document.write('rollno');
+		}
+//		getid1()
+	//settimeout() function
+	//callback function is a function as an argument
+	setTimeout(test1,2000)
+	function test1(){
+		document.write("excute after 10 secs")
+	}	
+	</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array Methods</title>
+</head>
+<body>
+	<h1>Java Script Using Array Methods</h1>
+<script type="text/javascript">
+	var numb = [1,23,5,8];
+	document.write("<b>"+'1. Method .map()'+"</b>","<br>")
+	const num = numb.map(Math.sqrt)
+	document.write(num,"<br>")
+	document.write("<b>"+'2. Method .filter()'+"</b>","<br>")
+		const result = numb.filter(even);
+		function even(n) {
+  		return n%2==0;
+		}
+	document.write(result,"<br>")
+	document.write("<b>"+'3. Method .sort()'+"</b>","<br>")
+	document.write(numb.sort(),"<br>")
+	document.write("<b>"+'4. Method .forEach()'+"</b>","<br>")		
+	let sum=0;
+		numb.forEach(myFunction);
+		function myFunction(item) {
+ 		 sum += item;
+		}
+	document.write(sum,"<br>")
+	document.write("<b>"+'5. Method .concat()'+"</b>","<br>")
+	document.write(numb.concat([3,9,4]),"<br>")
+	document.write("<b>"+'6. Method .every()'+"</b>","<br>")
+	document.write(numb.every(age),"<br>")
+		function age(age){
+			return age>18;
+		}
+	document.write("<b>"+'7. Method .some()'+"</b>","<br>")
+	document.write(numb.some(age),"<br>")
+		function age(age){
+			return age>18;
+		}
+	document.write("<b>"+'8. Method .includes()'+"</b>","<br>")
+	document.write(numb.includes(25),"<br>")
+	document.write("<b>"+'9. Method .join()'+"</b>","<br>")
+	document.write(numb.join(),"<br>")
+	document.write("<b>"+'10. Method .reduce()'+"</b>","<br>")
+	document.write(numb.reduce(myFunc),"<br>")
+		function myFunc(total, num) {
+ 			 return total + num;
+		}
+	document.write("<b>"+'11. Method .find()'+"</b>","<br>")
+	document.write(numb.find(my),"<br>")
+		function my(age) {
+ 			 return age>18
+ 		}
+	document.write("<b>"+'12. Method .findIndex()'+"</b>","<br>")
+	document.write(numb.findIndex(m),"<br>")
+		function m(age) {
+ 			 return age>20
+ 		}
+ 	 document.write("<b>"+'13. Method .indexOf()'+"</b>","<br>")
+	 document.write(numb.indexOf(25),"<br>")
+ 	document.write("<b>"+'14. Method .fill()'+"</b>","<br>")
+	numb.fill('1000')
+	document.write(numb,"<br>")
+	const name = ["Neela", "Sai", "Sankar", "Nivas"];
+ 	document.write("<b>"+'13. Method .slice()'+"</b>","<br>")
+ 	document.write(name.slice(1,4),"<br>")
+ 	document.write("<b>"+'14. Method .reverse()'+"</b>","<br>")
+ 	name.reverse()
+ 	document.write(name,"<br>")
+ 	document.write("<b>"+'15. Method .push()'+"</b>","<br>")
+    name.push("u");
+ 	document.write(name,"<br>")
+ 	document.write("<b>"+'16. Method .pop()'+"</b>","<br>")
+    name.pop();	
+ 	document.write(name,"<br>")		 
+	document.write("<b>"+'17. Method .shift()'+"</b>","<br>")
+	name.shift()
+	document.write(name,"<br>")
+	document.write("<b>"+'18. Method .unshift()'+"</b>","<br>")
+	name.unshift('tech','hub')
+	document.write(name,"<br>")
+</script>
+</body>
+</html>

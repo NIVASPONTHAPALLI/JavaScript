@@ -1,0 +1,43 @@
+.container{
+	padding-top: 10px;
+	height: 1050px;
+	background-color: lightblue;
+}
+.nav-item{
+	margin-right: 10px;
+	border-radius: 5px solid;
+}
+.a1{
+	height: 500px;
+	padding-left: 30px;
+}
+.card{
+	left: 20%;
+	height: 400px;
+	width: 350px;
+	padding-top: 10px;
+	padding-left: 20px;
+	margin-right: 60px;
+	margin-top: 20px;
+}
+.a11{
+	float: left;
+	width: inherit;
+    height: 130px;
+}
+.a12{
+	
+	width: 150px;
+    height: 130px;
+    color: red;
+}
+img{
+	width: 160px;
+    height: 130px;
+    border-radius: 50px;
+}
+.sp{
+	margin-left: 20px;
+	font-size: 25px;
+	font-style: bold;
+}

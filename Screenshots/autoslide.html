@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>autoslide</title>
+	<center><img name="slide" style="width: 540px; height:370px;"></center>
+
+</head>
+<body>
+<script type="text/javascript">
+	var i=0;
+	var images=[];
+//	var time=1000;
+	images[0]='1.jpg'
+	images[1]='2.jpg'
+	images[2]='3.jpg'
+	images[3]='4.jpg'
+	function changeImg(){
+		document.slide.src=images[i];
+		if(i<images.length-1){
+			i++;
+		}else{
+			i=0;
+		}
+		setTimeout("changeImg()",1000);
+	}
+	window.onload=changeImg
+</script>
+<!--<script type="text/javascript">
+	var i=0;
+	function(){
+		i++
+		document.getElementById("new").innerHTML="<img src='"+i+".png'style='width: 350px; height: 300px;'/>";
+	}
+</script> -->
+</body>
+</html>

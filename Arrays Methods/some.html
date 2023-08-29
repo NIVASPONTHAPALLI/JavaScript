@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Methods | some()</title>
+</head>
+<body>
+<h2>Array Methods | some()</h2>
+<p>This method returns the boolean value when condition is satifisied then exist from the iteration loop.</p>
+</body>
+	<script type="text/javascript">
+	let mails_ids = ['ss@gmail.com','rrr@gmail.com'];
+	let mailexistornot = mails_ids.some(function(ele,i,arr){
+		return ele == 'ttt@gmail.com'
+	})
+	console.log(mailexistornot)
+		
+	</script>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array|methods</title>
+</head>
+<body>
+<h1>Array methods</h1>
+<p id="id_name"></p>
+<script type="text/javascript">
+	let arr = ['Neela','Sai','Sankar','Nivas']
+	function a(arr_method){
+		document.write(arr_method)
+	}
+	a("input arr = "+arr+"<br>")
+	const arr1 = ['Neela','Sai','Sankar','Nivas']
+	document.write("array length= "+arr.length+"<br>")
+	let arr2 = ['Full','Stack','Developer']
+	document.getElementById('id_name').innerHTML=arr2;
+	arr2.pop();
+	document.write("pop method= "+arr2+"<br>")
+	const arr3 = ['Full','Stack','Developer']
+	document.getElementById('id_name').innerHTML=arr3;
+	arr3.push("Ponthapalli")
+	document.write("push method= "+arr3+"<br>")
+	const arr4 = ['Full','Stack','Developer']
+	document.getElementById('id_name').innerHTML=arr4;
+	arr4.shift()
+	document.write("shift method= "+arr4+"<br>")
+	let arr5 = ['Full','Stack','Developer'];
+	document.getElementById('id_name').innerHTML=arr5;
+	arr5.unshift("Nothing")
+	document.write("unshift= "+arr5+"<br>")
+	let arr6 = ['Full','Stack','Developer']
+	document.getElementById('id_name').innerHTML=arr6;
+	arr6.splice(2,0,"aws","flutter")
+	document.write("arr of splice= "+arr6+"<br>")
+	let arr7 = ['Full','Stack','Developer']
+	const arr8 = arr7.slice(1)
+	document.getElementById('id_name').innerHTML=arr7;
+	document.write("arr of slice= "+arr8+"<br>")
+
+	let arr9 = ['Neela','Sai','Sankar'];
+	document.getElementById('id_name').innerHTML=arr9;
+	arr9.sort()
+	document.write("sort= "+arr9+"<br>")
+
+	let arr10 = ['Neela','Sai','Sankar'];
+	document.getElementById('id_name').innerHTML=arr10;
+	arr10.reverse()
+	document.write("reverse= "+arr10+"<br>")
+	let arr11 = ['Neela','Sai','Sankar'];
+	document.getElementById('id_name').innerHTML=arr11;
+	arr11.fill("new1")
+	document.write("fill_method= "+arr11+"<br>")
+</script>
+</body>
+</html>

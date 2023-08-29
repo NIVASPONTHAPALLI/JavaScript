@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task-7</title>
+</head>
+<body>
+<script type="text/javascript">
+	let v=prompt("enter the value:")
+	function pal(s){
+		var l=s.length-1
+		for(var i=0; i<s.length/2;i++){
+			if(s[i]!=s[l]){
+				return false;
+			}
+		l--;
+		}
+		return true;
+	}
+document.write(pal(v))
+</script>
+</body>
+</html>
